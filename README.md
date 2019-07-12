@@ -1,2 +1,3 @@
 # PHPHospitalManagementSystem
-## dsfad
+## PhP ile MySQL Veritabanı Bağlantısı Yapma
+
