@@ -18,21 +18,20 @@ mysqli_close($conn);
 Bu script’de kullanılan ana yöntem mysqli_connect() metodudur. Mysqli_connect() metodu, MySQL sunucusuna yeni bir bağlantı açar.<br> 
 Sözdizimi: <strong> "mysqli_connect (host, username, password, dbname, port, socket); </strong> şeklindedir.<br>
 Projenin ana sayfasına sekmeler ekleyerek diğer projeyle benzer şekilde doktor, hasta ve admin girişleri ile işlemler sağlamayı düşünüyorum. Admin, bütün işlemleri kontrol edebilir olacak.<br>
-İlk etapta bir veri tabanı oluşturmam gerekecek. Bu veri tabanına ekleyeceğim elemanların taslağını oluşturdum. Admin, randevu, doktor bilgilerini içeren bir doktor tablosu, giriş yapabilmeleri için kullanıcı adı ve parola içeren farklı bir doktor tablosu, branşlarına göre ayırabilmek için bir doktor tablosu ve herhangi bir kullanıcının giriş yapması için ve bilgilerini tutmak için tablolar oluşturacağım.<br>
-Hastane yönetim sistemi projemin ilk etabı veri tabanı oluşturmaktı. Projemin veri tabanı 7 adet tablodan oluşuyor:
-![image1](https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image1.jpg "image1")
+İlk etapta bir veri tabanı oluşturmam gerekecek. Bu veri tabanına ekleyeceğim elemanların taslağını oluşturdum. Admin, randevu, doktor bilgilerini içeren bir doktor tablosu, giriş yapabilmeleri için kullanıcı adı ve parola içeren farklı bir doktor tablosu, branşlarına göre ayırabilmek için bir doktor tablosu ve herhangi bir kullanıcının giriş yapması için ve bilgilerini tutmak için tablolar oluşturacağım.
+<br>Hastane yönetim sistemi projemin ilk etabı veri tabanı oluşturmaktı. Projemin veri tabanı 7 adet tablodan oluşuyor:
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image1.jpg />
-Tabloların her birine birkaç içerik ekledim. Örnek olarak:
-<strong> Doktor tablosu: </strong>
+<br>Tabloların her birine birkaç içerik ekledim. Örnek olarak:
+<br><strong> Doktor tablosu: </strong>
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image2.jpg />
-<strong> Kullanıcılar tablosu: </strong>
+<br><strong> Kullanıcılar tablosu: </strong>
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image3.jpg />
 ## Site Tasarımı
 Projemin ana sayfa tasarımında sekmeler ekledim ve ulaşmak istediğimiz sayfalara bağlantıları buradan sağlayacağız.
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image4.jpg />
-Şu an bulunduğumuz sayfa Ana Sayfa. İletişim’e tıklayıp iletişim bilgilerini görebiliriz. Hastalar sekmesinde hasta girişi, diğerlerinde de aynı şekilde doktor girişi ve admin girişi olarak giriş yapabiliriz. Ayrıca ana sayfada html kodda slider ile görüntü efekti kullanarak modern bir tasarım elde etmeye çalıştım ve onun için hazır <strong> responsiveslides.min.js </strong> kullandım:
+<br>Şu an bulunduğumuz sayfa Ana Sayfa. İletişim’e tıklayıp iletişim bilgilerini görebiliriz. Hastalar sekmesinde hasta girişi, diğerlerinde de aynı şekilde doktor girişi ve admin girişi olarak giriş yapabiliriz. Ayrıca ana sayfada html kodda slider ile görüntü efekti kullanarak modern bir tasarım elde etmeye çalıştım ve onun için hazır <strong> responsiveslides.min.js </strong> kullandım:
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image5.jpg />
-Bu fonksiyon ile sliderin maksimum genişliğini ve hızını belirttik:
+<br>Bu fonksiyon ile sliderin maksimum genişliğini ve hızını belirttik:
 ```javascript
 <script>
     $(function () {
@@ -42,7 +41,7 @@ Bu fonksiyon ile sliderin maksimum genişliğini ve hızını belirttik:
         )};
     )};
 ```
-Aşağıdaki kod parçası ise sliderin kaç tane resimden oluşup onların sıralaması belirtiyor :
+<br>Aşağıdaki kod parçası ise sliderin kaç tane resimden oluşup onların sıralaması belirtiyor :
 ```javascript
 <div class="image-slider">
     <ul class="rslides" id="slider1">
@@ -58,20 +57,20 @@ Bir sitenin olmazsa olmazlarından biri de kişilerin muhataplarına direk ulaş
 ## Hastalar
 Projenin “Hastalar” sayfasına giriş için tıkladığımızda karşımıza bir giriş sayfası çıkıyor.
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image7.jpg />
-İlk etapta daha önce veri tabanında belirlediğim hasta bilgileri ile giriş yapabiliyorum. Veri tabanına bilgi ekleyebilmenin yanı sıra hastaların bu sayfa yolu ile üyelik hesabı oluşturulabilir. Aşağıda bulunan “Hesap oluştur” kısmına basmak bunun için yeterli. 
+<br>İlk etapta daha önce veri tabanında belirlediğim hasta bilgileri ile giriş yapabiliyorum. Veri tabanına bilgi ekleyebilmenin yanı sıra hastaların bu sayfa yolu ile üyelik hesabı oluşturulabilir. Aşağıda bulunan “Hesap oluştur” kısmına basmak bunun için yeterli. 
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image8.jpg />
-Tıkladığımızda karşımıza kayıt sayfası çıkacak. Bu sayfada istenilen bilgileri girip “Gönder” butonuna tıkladığımızda veri tabanına bir üye daha eklemiş oluyoruz ve eklediğimiz üyelik kullanıcı adı ve şifresi ile giriş yapabiliyoruz. Giriş yaptıktan sonra karşımıza çıkan sayfa aşağıdaki gibidir. Sağ üst köşedeki isme tıkladığımızda profil görüntüleme, şifre değiştirme ve çıkış yapma seçeneklerimiz olacak. Karşımıza çıkan ilk sayfa “Kontrol Paneli” sayfası. Diğer sekmelerde de randevu oluşturma ve oluşturulan randevuları görüntüleme seçeneklerimiz mevcut. Ayrıca sayfalarda hazır bootstrap modülleri mevcut: sidebar, toolbar vs.
+<br>Tıkladığımızda karşımıza kayıt sayfası çıkacak. Bu sayfada istenilen bilgileri girip “Gönder” butonuna tıkladığımızda veri tabanına bir üye daha eklemiş oluyoruz ve eklediğimiz üyelik kullanıcı adı ve şifresi ile giriş yapabiliyoruz. Giriş yaptıktan sonra karşımıza çıkan sayfa aşağıdaki gibidir. Sağ üst köşedeki isme tıkladığımızda profil görüntüleme, şifre değiştirme ve çıkış yapma seçeneklerimiz olacak. Karşımıza çıkan ilk sayfa “Kontrol Paneli” sayfası. Diğer sekmelerde de randevu oluşturma ve oluşturulan randevuları görüntüleme seçeneklerimiz mevcut. Ayrıca sayfalarda hazır bootstrap modülleri mevcut: sidebar, toolbar vs.
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image9.jpg />
 ## Doktor Girişi
 Projede hastaların yanı sıra doktorlar için de geçmiş randevularını görüntüleme ihtiyaçları duyduklarında veya mevcut profillerini güncellemek istediklerinde ihtiyaçlarını karşılamak için imkan sunuluyor. Hastalar gibi doktorlar da şifrelerinde değişiklik yapabiliyor.
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image10.jpg />
-Profili güncelle seçeneğine tıkladığımızda aşağıda görünen sayfa karşımıza çıkıyor. Değişiklik yapmak istediğimiz kısımlara uyguladığımız değişikliklerden sonra “Güncelle” seçeneğine tıkladığımızda bilgilerimiz güncellenmiş oluyor.
+<br>Profili güncelle seçeneğine tıkladığımızda aşağıda görünen sayfa karşımıza çıkıyor. Değişiklik yapmak istediğimiz kısımlara uyguladığımız değişikliklerden sonra “Güncelle” seçeneğine tıkladığımızda bilgilerimiz güncellenmiş oluyor.
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image11.jpg />
 ## Admin Girişi
 Admin sayfasında diğerlerine kıyasla çok daha fazla özellik mevcut. Sonuç olarak sitenin yöneticisi konumunda olduğu için her olaya, veriye müdahale edebilecek bir pozisyonda olmalı. Giriş yaptıktan sonra karşımıza çıkan sayfa şu şekilde;
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image12.jpg />
-Burada admin, doktor, hasta ve randevu bilgilerini görüp müdahale edebiliyor. Örneğin hastaneye yeni gelen bir doktor için kayıt oluşturabiliyor.
+<br>Burada admin, doktor, hasta ve randevu bilgilerini görüp müdahale edebiliyor. Örneğin hastaneye yeni gelen bir doktor için kayıt oluşturabiliyor.
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image13.jpg />
-“Doktor Uzmanlığı” seçeneğinde sağlamasını düşündüğüm avantaj, hastaneye mevcut olmayan bir bölüm açıldığı zaman direkt olarak buradan yeni bir bölüm ekleyebileceğiz. “Doktor Ekle” seçeneği ile de bölümün doktorunun kaydını yaparak hastaların hizmetine sunacağız.
+<br>“Doktor Uzmanlığı” seçeneğinde sağlamasını düşündüğüm avantaj, hastaneye mevcut olmayan bir bölüm açıldığı zaman direkt olarak buradan yeni bir bölüm ekleyebileceğiz. “Doktor Ekle” seçeneği ile de bölümün doktorunun kaydını yaparak hastaların hizmetine sunacağız.
 <img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image14.jpg />
-Burada yaptığımız değişiklikler veri tabanında aynı şekilde güncellenecek.
+<br>Burada yaptığımız değişiklikler veri tabanında aynı şekilde güncellenecek.
