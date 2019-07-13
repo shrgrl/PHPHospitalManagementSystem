@@ -20,7 +20,7 @@ Sözdizimi: <strong> "mysqli_connect (host, username, password, dbname, port, so
 Projenin ana sayfasına sekmeler ekleyerek diğer projeyle benzer şekilde doktor, hasta ve admin girişleri ile işlemler sağlamayı düşünüyorum. Admin, bütün işlemleri kontrol edebilir olacak.<br>
 İlk etapta bir veri tabanı oluşturmam gerekecek. Bu veri tabanına ekleyeceğim elemanların taslağını oluşturdum. Admin, randevu, doktor bilgilerini içeren bir doktor tablosu, giriş yapabilmeleri için kullanıcı adı ve parola içeren farklı bir doktor tablosu, branşlarına göre ayırabilmek için bir doktor tablosu ve herhangi bir kullanıcının giriş yapması için ve bilgilerini tutmak için tablolar oluşturacağım.
 <br>Hastane yönetim sistemi projemin ilk etabı veri tabanı oluşturmaktı. Projemin veri tabanı 7 adet tablodan oluşuyor:
-<br><img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image1.jpg />
+![](https://github.com/shrgrl/PHPHospitalManagementSystem/blob/master/images/image1.jpg)
 <br>Tabloların her birine birkaç içerik ekledim. Örnek olarak:
 <br><strong> Doktor tablosu: </strong>
 <br><img src=https://github.com/shrgrl/PHPHospitalManagementSystem/tree/master/images/image2.jpg />
