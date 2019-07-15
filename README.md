@@ -32,6 +32,15 @@ Projenin ana sayfasına sekmeler ekleyerek diğer projeyle benzer şekilde dokto
 
 ![](https://github.com/shrgrl/PHPHospitalManagementSystem/blob/master/images/image3.jpg)
 
+## Projenin Çalıştırılması
+Projeyi çalıştırmak için ilk önce bilgisayarımızda yüklü bulunan XAMPP programını açıp, <i>Apache</i> ve <i>MySQL</i> seçeneklerini <strong>Start</strong> etmemiz gerekiyor.
+img1
+Ardından web tarayıcımıza <strong>localhost</strong> yazıyoruz.
+img2
+Önceden veritabanına eklemiş olduğumuz projemizi seçiyoruz.
+img3
+Son olarak src seçeneği, tıkladığımızda bizi ana sayfaya yönlendirecektir.
+img4
 ## Site Tasarımı
 Projenin ana sayfa tasarımında sekmeler ekledim ve ulaşmak istediğimiz sayfalara bağlantıları buradan sağlayacağız.
 
