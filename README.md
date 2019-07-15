@@ -41,7 +41,7 @@ Projeyi çalıştırmak için ilk önce bilgisayarımızda yüklü bulunan XAMPP
 
 ![](https://github.com/shrgrl/PHPHospitalManagementSystem/blob/master/images/img2.JPG)
 
-<br>Son olarak src seçeneği, tıkladığımızda bizi ana sayfaya yönlendirecektir.
+Son olarak src seçeneği, tıkladığımızda bizi ana sayfaya yönlendirecektir.
 
 ![](https://github.com/shrgrl/PHPHospitalManagementSystem/blob/master/images/img3.JPG)
 ## Site Tasarımı
