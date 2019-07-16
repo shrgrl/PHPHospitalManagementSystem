@@ -48,7 +48,7 @@ Projenin ana sayfa tasarımında sekmeler ekledim ve ulaşmak istediğimiz sayfa
 
 ![](https://github.com/shrgrl/PHPHospitalManagementSystem/blob/master/images/image4.jpg)
 
-<br>Şu an bulunduğumuz sayfa Ana Sayfa. İletişim’e tıklayıp iletişim bilgilerini görebiliriz. Hastalar sekmesinde hasta girişi, diğerlerinde de aynı şekilde doktor girişi ve admin girişi olarak giriş yapabiliriz. Ayrıca ana sayfada html kodda slider ile görüntü efekti kullanarak modern bir tasarım elde etmeye çalıştım ve onun için hazır <strong> responsiveslides.min.js </strong> kullandım:
+<br>Şu an bulunduğumuz sayfa Ana Sayfa. İletişim’e tıklayıp iletişim bilgilerini görebiliriz. Hastalar sekmesinde hasta girişi, diğerlerinde de aynı şekilde doktor girişi ve admin girişi olarak giriş yapabiliriz. Ayrıca ana sayfada html kodda slider ile görüntü efekti kullanarak modern bir tasarım elde etmeye çalıştım ve onun için hazır <strong> responsiveslides.js </strong> kullandım:
 
 ![](https://github.com/shrgrl/PHPHospitalManagementSystem/blob/master/images/image5.jpg)
 
